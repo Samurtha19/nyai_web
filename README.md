@@ -1,4 +1,4 @@
-# ⚖️ CyberJustice-BD
+# ⚖️ NYAI
 
 > **AI-Powered Legal Assistant for Bangladeshi Cyber Security Law**  
 > Intelligent Document Retrieval & Legal Guidance System with Advanced NLP
@@ -11,7 +11,7 @@
 
 ## 🎯 **Overview**
 
-CyberJustice-BD is an advanced AI-powered legal assistant specifically designed for Bangladeshi cyber security law. The system combines state-of-the-art information retrieval techniques with domain-specific legal knowledge to provide accurate, contextual guidance for digital security legal matters.
+NYAAI is an advanced AI-powered legal assistant specifically designed for Bangladeshi cyber security law. The system combines state-of-the-art information retrieval techniques with domain-specific legal knowledge to provide accurate, contextual guidance for digital security legal matters.
 
 ### **🌟 Key Features**
 
@@ -24,9 +24,6 @@ CyberJustice-BD is an advanced AI-powered legal assistant specifically designed 
 - **📱 Cross-Platform**: Responsive design for all devices
 - **🚀 Real-Time**: Sub-200ms query processing
 
-## 🚀 **Live Demo**
-
-**Try CyberJustice-BD:** [Launch Application](https://your-demo-link.com)
 
 ### **Sample Legal Consultations**
 
@@ -238,19 +235,6 @@ const legalBoost = {
 - **🏠 Local Processing**: All computation client-side
 - **🔐 Secure Access**: HTTPS encryption for all communications
 - **👤 User Privacy**: Anonymous usage, no tracking
-
-## 📞 **Contact & Support**
-
-### **Research Inquiries**
-- **Email**: [your.email@university.edu]
-- **LinkedIn**: [Your Professional Profile]
-- **Research Gate**: [Your Academic Profile]
-- **ORCID**: [Your ORCID ID]
-
-### **Technical Support**
-- **Issues**: [GitHub Issues Page]
-- **Documentation**: [Technical Wiki]
-- **Community**: [Discussion Forum]
 
 ## 📄 **License**
 
