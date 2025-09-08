@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NyaAI - Legal Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for chat history -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>NyaAI Legal</h2>
+                <button class="new-chat-btn" id="newChatBtn">+ New Chat</button>
+            </div>
+            
+            <div class="chat-history" id="chatHistory">
+                <!-- Chat history will be populated here -->
+            </div>
+            
+            <div class="sidebar-footer">
+                <div class="stats">
+                    <div class="stat-item">
+                        <span id="totalDocs">0</span>
+                        <label>Documents</label>
+                    </div>
+                    <div class="stat-item">
+                        <span id="accuracy">0%</span>
+                        <label>Accuracy</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main chat area -->
+        <div class="main-content">
+            <div class="chat-container" id="chatContainer">
+                <div class="welcome-message" id="welcomeMessage">
+                    <div class="welcome-content">
+                        <h1>Welcome to NyaAI Legal Assistant</h1>
+                        <p>Ask questions about Bangladeshi Women and Children Law</p>
+                        <div class="example-questions">
+                            <h3>Try asking:</h3>
+                            <div class="example-item" onclick="askExample('What are the penalties for children labours?')">
+                                "What are the penalties for children labours?"
+                            </div>
+                            <div class="example-item" onclick="askExample('How is domestic violence defined and punished?')">
+                                "How is domestic violence defined and punished?"
+                            </div>
+                            <div class="example-item" onclick="askExample('What constitutes women abuse under the law?')">
+                                "What constitutes women abuse under the law?"
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="messages" id="messages">
+                    <!-- Chat messages will appear here -->
+                </div>
+            </div>
+
+            <!-- Input area -->
+            <div class="input-container">
+                <div class="input-wrapper">
+                    <textarea 
+                        id="messageInput" 
+                        placeholder="Ask about Bangladeshi women and children law..."
+                        rows="1"></textarea>
+                    <button id="sendBtn" class="send-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="input-footer">
+                    <small>Press Enter to send • Shift+Enter for new line</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading indicator -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+        <p>Loading legal documents...</p>
+    </div>
+
+    <script src="chat-engine.js"></script>
+    <script src="chat-app.js"></script>
+</body>
+</html>
